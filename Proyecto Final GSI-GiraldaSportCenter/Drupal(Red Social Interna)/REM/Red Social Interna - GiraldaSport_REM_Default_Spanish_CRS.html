@@ -1,0 +1,2458 @@
+<html xmlns:rem="http://rem.lsi.us.es">
+<head>
+<title>Proyecto Red Social Interna - GiraldaSport</title>
+<style type="text/css">
+<!--
+            body {
+                font-family: arial,verdana;
+                font-size: 10pt;
+                text-align: justify
+            }
+
+            h1 { font-size: 14pt }
+            h2 { font-size: 13pt }
+            h3 { font-size: 12pt }
+            h4 { font-size: 11pt }
+            h5 { font-size: 10pt }
+            h6 { font-size: 10pt }
+
+            h1.cover { font-size: 20pt }
+
+            tr { font-size: 10pt }
+
+            table { border: black solid; }
+            table.TOC { border: none; }
+            ul {
+                margin-top:    0pt;
+                margin-bottom: 0pt;
+                margin-left:   12pt
+            }
+        -->
+</style>
+</head>
+<body>
+<center>
+<h3>Proyecto Red Social Interna - GiraldaSport</h3>
+<p />
+<h1 class="cover">Documento de Requisitos del Sistema</h1>
+<p />
+<h3>Versión 1.0</h3>
+<h3>Fecha 09/12/2018</h3>
+<p />
+<h3>Preparado para:</h3>
+<p><font color="red">?</font></p>
+<p />
+<h3>Preparado por:</h3>
+<p><font color="red">?</font></p>
+<p />
+</center>
+<hr size="4" />
+<p />
+<h1 align="left">Índice</h1>
+<p />
+<table border="0" width="100%" class="TOC">
+<tr>
+<th align="left" valign="top">1 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0001">
+Caso de negocio - Red Social Interna para GiraldaSport</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0004">
+Introduccion - resumen ejecutivo</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.1.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0011">
+Misión y visión del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0005">
+Descripcion de la situacion actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0012">
+Análisis DAFO</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0006">
+Desccripcion del proyecto</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0007">
+Principales drivers</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.4.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0013">
+Drivers</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.5 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0008">
+Objetivos del negocio</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.6 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0009">
+Principales riesgos</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.7 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0010">
+Participantes del proyecto</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.7.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0018">
+Personas</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.7.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0019">
+Organizaciones</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">2 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0002">
+Requisitos del sistema software</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0014">
+Requisitos de información</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0015">
+Requisitos Funcionales</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0016">
+Reglas de Negocio</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0017">
+Requisitos No Funcionales</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">3 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0003">
+Glosario de terminos</a>
+</th>
+</tr>
+</table>
+<p />
+<hr size="4" />
+<p />
+<a name="SEC-0001" />
+<h1 align="left">1 
+Caso de negocio - Red Social Interna para GiraldaSport</h1><a name="SEC-0004" />
+<h2 align="left">1.1 
+Introduccion - resumen ejecutivo</h2><a name="PRG-0001" />
+<p>En la actualidad, la sociedad opta cada vez más por llevar una vida sana, comiendo bien, haciendo deporte, realizando ejercico físico para combatir el estrés, por esto en los últimos años ha tenido un gran impulso el negocio del fitness y los gimnasios. La competitividad en este ámbito es cada vez más fuerte y por eso, GiraldaSport quiere apostar por una innovación en el ámbito TIC, ya que sabemos que las tecnologías pueden ser un fuerte aliado no solo en empresas del sector sino de otro totalmente diferente.</p>
+<a name="SEC-0011" />
+<h3 align="left">1.1.1 
+Misión y visión del sistema</h3><a name="PRG-0002" />
+<p>Misión: Darse a conocer al público e implantarse en nuevas comunidades autónomas</p>
+<a name="PRG-0003" />
+<p>Vision: Ser la franquicia centro fitness mas extendida regionalmente</p>
+<a name="SEC-0005" />
+<h2 align="left">1.2 
+Descripcion de la situacion actual</h2><a name="PRG-0004" />
+<p>En esta sección se describirá el funcionamiento de la empresa en la actualidad(antes de implantar la red social) mostrando su análisis DAFO</p>
+<a name="SEC-0012" />
+<h3 align="left">1.2.1 
+Análisis DAFO</h3><a name="PRG-0005" />
+<p>FORTALEZAS:
+<br />- Plantilla contratada del gimnasio joven y con acercamiento a las tecnologías TIC
+<br />- Nivel de formación medio-alto</p>
+<a name="PRG-0006" />
+<p>DEBILIDADES:
+<br />- Ciertas tareas administrativas realizadas a mano
+<br />- Formación baja de los trabajadores en tareas de ofimática
+<br />- Dificultad por la falta de software o uso de redes sociales para darse a conocer al cliente</p>
+<a name="PRG-0007" />
+<p>OPORTUNIDADES:
+<br />- Clientes cada vez más interesados por el mundo fitness
+<br />- Momento clave para uso de redes con fines de publicidad y marketing
+<br />- Facilidad de hacerse conocer</p>
+<a name="PRG-0008" />
+<p>AMENAZAS:
+<br />- Gran auge de gimnasios en la actualidad
+<br />- Precios competitivos
+<br />- Cliente volátil, no fidelidad </p>
+<a name="SEC-0006" />
+<h2 align="left">1.3 
+Desccripcion del proyecto</h2><a name="PRG-0009" />
+<p>Este proyecto consiste en la implementación y puesta en funconamiento de una red social interna para la empresa GiraldaSport. La finalidad de implantar dicho sistema será mejorar la comunicación interna de los empleados , monitores, directores, administrativos, etc. Cada usuario tendrá un nivel de permisos diferentes de acuerdo al rol que desempeña en la empresa.Además, el sistema facilitará varias herramientas para gestión y resolución de problemas. Dicho sistema debe emplearse en futuras franquicias de la marca.</p>
+<a name="SEC-0007" />
+<h2 align="left">1.4 
+Principales drivers</h2><a name="PRG-0010" />
+<p>Los drivers que motival el proyecto son:
+<br />
+</p>
+<a name="SEC-0013" />
+<h3 align="left">1.4.1 
+Drivers</h3><a name="OBJ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0001</th>
+<th align="left" valign="top" width="100%">
+Franquiciado y extensión regional</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Los drivers principales de la empresa GiraldaSport son la franquicia y la extensión regional
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0008" />
+<h2 align="left">1.5 
+Objetivos del negocio</h2><a name="OBJ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0002</th>
+<th align="left" valign="top" width="100%">
+Comunicación horizontal</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+permitir comunicación horizontal, es decir, entre usuarios con roles idénticos</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0003</th>
+<th align="left" valign="top" width="100%">
+Comunicación vertical</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+permitir comunicación vertical, es decir, entre usuarios con distintos roles.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0004</th>
+<th align="left" valign="top" width="100%">
+Aprendizaje Global</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+deberá mejorar el aprendizaje global
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0005</th>
+<th align="left" valign="top" width="100%">
+Unificar información</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+unificar la información de forma centralizada, en un solo software</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0009" />
+<h2 align="left">1.6 
+Principales riesgos</h2><a name="SEC-0010" />
+<h2 align="left">1.7 
+Participantes del proyecto</h2><a name="SEC-0018" />
+<h3 align="left">1.7.1 
+Personas</h3><a name="STK-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+José Carlos García Pavón</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Director Ingeniero</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Enrique Ramos Miró</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Arquitecto Software</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+David Balboa Morcillo</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Ingeniero de requisitos</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Francisco Pardillo Castillo</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Scrum Manager</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0019" />
+<h3 align="left">1.7.2 
+Organizaciones</h3><a name="SEC-0002" />
+<h1 align="left">2 
+Requisitos del sistema software</h1><a name="SEC-0014" />
+<h2 align="left">2.1 
+Requisitos de información</h2><a name="IRQ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0001</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Tipos de usuarios</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+El sistema deberá almacenar la información correspondiente a los siguientes tipos de usuario.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0002" />
+Monitor</li>
+<li>
+<a name="DAT-0003" />
+Organizador</li>
+<li>
+<a name="DAT-0004" />
+Administrador</li>
+<li>
+<a name="DAT-0005" />
+Personal de mantenimiento</li>
+<li>
+<a name="DAT-0033" />
+Directivos
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0002</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Monitores</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+<font color="red"><b>PD</b></font>.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0006" />
+Nombre y Apellidos</li>
+<li>
+<a name="DAT-0007" />
+Cursos que imparte</li>
+<li>
+<a name="DAT-0008" />
+Teléfono</li>
+<li>
+<a name="DAT-0009" />
+Email</li>
+<li>
+<a name="DAT-0039" />
+Nº id empleado</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0003</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Organizadores</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+<font color="red"><b>PD</b></font>.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0010" />
+Nombre y apellidos</li>
+<li>
+<a name="DAT-0011" />
+Eventos organizados
+<br />
+</li>
+<li>
+<a name="DAT-0012" />
+Telefono
+<br />
+</li>
+<li>
+<a name="DAT-0013" />
+Email</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0004</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Administrativos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+<font color="red"><b>PD</b></font>.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0014" />
+Nombre y apellidos</li>
+<li>
+<a name="DAT-0015" />
+Teléfono</li>
+<li>
+<a name="DAT-0016" />
+Email</li>
+<li>
+<a name="DAT-0038" />
+Nº id empleado</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0005</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Personal de mantenimiento</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+<font color="red"><b>PD</b></font>.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0017" />
+Nombre y Apellidos
+<br />
+</li>
+<li>
+<a name="DAT-0018" />
+Tipo labor</li>
+<li>
+<a name="DAT-0019" />
+Teléfono</li>
+<li>
+<a name="DAT-0020" />
+Email</li>
+<li>
+<a name="DAT-0040" />
+Nº id empleado</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0006</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Grupos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+<font color="red"><b>PD</b></font>.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0023" />
+Grupo de resolucón de problemas dentro de cada zona de trabajo concreta</li>
+<li>
+<a name="DAT-0024" />
+Grupo de ideas para organizaciones de eventos y futuros cursos</li>
+<li>
+<a name="DAT-0041" />
+Grupo de comunicación para cada departamento</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0007</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Grupos de resolución de problemas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+<font color="red"><b>PD</b></font>.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0025" />
+Documentos compartidos
+<br />
+</li>
+<li>
+<a name="DAT-0026" />
+Foro de discusión</li>
+<li>
+<a name="DAT-0027" />
+Zona de notificaciones de cada día</li>
+<li>
+<a name="DAT-0028" />
+Zona de encuesta para votar una nueva solución</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0008</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Grupos de nuevas ideas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+<font color="red"><b>PD</b></font>.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0029" />
+Publicación de ideas por parte del empleado para la mejora de algo</li>
+<li>
+<a name="DAT-0030" />
+Directorio de empleados</li>
+<li>
+<a name="DAT-0031" />
+Notificaciones</li>
+<li>
+<a name="DAT-0032" />
+Sistemas de votación de nuevas ideas</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="IRQ-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">IRQ-0009</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Directivos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá almacenar la información correspondiente a 
+<em>
+<font color="red"><b>PD</b></font>.
+				</em>
+    En concreto:
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Datos específicos</th>
+<td colspan="2" align="left" valign="top">
+<ul>
+<li>
+<a name="DAT-0034" />
+Nombre y Apellidos</li>
+<li>
+<a name="DAT-0035" />
+Sexo</li>
+<li>
+<a name="DAT-0036" />
+Descripción</li>
+<li>
+<a name="DAT-0037" />
+Email</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Tiempo de vida</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th rowspan="2" align="left" valign="top">Ocurrencias simultáneas</th>
+<th align="left" valign="top">Medio</th>
+<th align="left" valign="top">Máximo</th>
+</tr>
+<tr>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+<td>
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0015" />
+<h2 align="left">2.2 
+Requisitos Funcionales</h2><a name="FRQ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0001</th>
+<th align="left" valign="top" width="100%">
+Participación en grupos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Cualquier empleado de la empresa podrá participar en los grupos relacionados con su sector/departamento</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0002</th>
+<th align="left" valign="top" width="100%">
+Evaluación de ideas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+En los grupos de nuevas ideas donde participan organizadores, monitores y directores podrán evaluar las nuevas propuestas de cualquier miembro del grupo mediante votación</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0003</th>
+<th align="left" valign="top" width="100%">
+Foro de discusión del grupo de resolución de problemas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Cualquier miembro de dicho grupo puede discutir una idea, podrá ser evaluada por cualquier compañero y puede ser compartida</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0004</th>
+<th align="left" valign="top" width="100%">
+Visualización de grupo de ideas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Nuevas ideas visualizadas a toda la plantilla en funcionamiento de dicho gimnasio pero solo pueden participar los miembros del grupo</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="FRQ-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0005</th>
+<th align="left" valign="top" width="100%">
+Requisito de ubicación</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+El sistema es unitario para cualquier franquicia del gimansio, pero los empleados de un área geográfica solo pueden acceder a los grupos de dicha zona.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0016" />
+<h2 align="left">2.3 
+Reglas de Negocio</h2><a name="CRQ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CRQ-0001</th>
+<th align="left" valign="top" width="100%">
+Creacion de grupos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
+<em>
+Solo los empleados de cada zona pueden crear grupos relacionados con su departamento.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="CRQ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CRQ-0002</th>
+<th align="left" valign="top" width="100%">
+Acceso abierto a resolución de problemas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
+<em>
+La información de los grupos de resolución de problemas serán visualizables por cualquier empleado de la empresa</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="CRQ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">CRQ-0003</th>
+<th align="left" valign="top" width="100%">
+Acceso restringido a ideas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+	La información almacenada por el sistema deberá satisfacer la siguiente restricción: 
+<em>
+Solo los organizadores, monitores y directivos tendrán acceso al grupo de nuevas ideas, propuestas.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0017" />
+<h2 align="left">2.4 
+Requisitos No Funcionales</h2><a name="NFR-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0001</th>
+<th align="left" valign="top" width="100%">
+Diversidad plataformas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+El sistema deberá ser implementado para diversos sitemas operativos, facilitando así la funcionalidad multiplataforma</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="NFR-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">NFR-0002</th>
+<th align="left" valign="top" width="100%">
+Disponibilidad 24/7</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 09/12/2018 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+El sistema deberá estar disponible las 24h de los 7 días de la semana, para facilitar así la notificación de un problema o la propuesta de una idea en cualquier momento</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0003" />
+<h1 align="left">3 
+Glosario de terminos</h1></body>
+</html>

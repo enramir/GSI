@@ -1,0 +1,1736 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files (x86)\REM 1.2.2\xml\REM_1_2_2.dtd">
+<rem:requirementsProject
+xmlns:rem="http://rem.lsi.us.es">
+<rem:name>RemGYM</rem:name>
+<rem:c_requirementsSpecification oid = "CRS-0001">
+<rem:name>Documento de Requisitos del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+<rem:section
+ oid = "SEC-0001">
+<rem:name>
+Introducción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0001">
+<rem:name>
+Introducción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Nuestro proyecto trata de llevar a cabo una implementación de un sistema de gestión de contenidos para un <rem:ref oid="GLO-0007">gimnasio</rem:ref>, donde trataremos  que nuestro proyecto, de facilidades tanto al <rem:ref oid="GLO-0005">usuario</rem:ref> como al <rem:ref oid="GLO-0003">administrador</rem:ref> y haga un poco más visible el negocio.<br/></rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0002">
+<rem:name>
+Participantes del proyecto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>2 </rem:number>
+<rem:section
+ oid = "SEC-0003">
+<rem:name>
+Participantes</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.1 </rem:number>
+<rem:stakeholder
+ oid = "STK-0001">
+<rem:name>
+Enrique Ramos Miró</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
+<rem:isDeveloper/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0002">
+<rem:name>
+José Carlos García Pavón</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
+<rem:isDeveloper/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0003">
+<rem:name>
+David Balboa Morcillo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
+<rem:isDeveloper/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0004">
+<rem:name>
+Francisco Pardillo Castillo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
+<rem:isDeveloper/>
+</rem:stakeholder>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0004">
+<rem:name>
+Descripción del Sistema Actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0002">
+<rem:name>
+Sistema Actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El sistema actual todavía está en proceso y por tanto falta algunas funcionalidades y características que iremos proponiendo y desarrollando en nuestro sistema, con el fin siempre de satisfacer las necesidades de nuestro/os clientes.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0005">
+<rem:name>
+Objetivos del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>4 </rem:number>
+<rem:objective
+ oid = "OBJ-0001">
+<rem:name>
+Posicionar tu marca y diferenciarte</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+atraer a los suficientes clientes para que el <rem:ref oid="GLO-0007">gimnasio</rem:ref> se convierta en uno de los establecimientos deportivos líderes del mercado</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0003">
+<rem:name>
+Conectar </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+conectar emocionalmente con tus potenciales clientes</rem:description>
+</rem:objective>
+<rem:objective
+ oid = "OBJ-0004">
+<rem:name>
+Aumentar la rentabilidad </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+aumentar la rentabilidad de la empresa, en este caso del <rem:ref oid="GLO-0007">gimnasio</rem:ref></rem:description>
+</rem:objective>
+</rem:section>
+<rem:section
+ oid = "SEC-0006">
+<rem:name>
+Catálogo de Requisitos del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>5 </rem:number>
+<rem:section
+ oid = "SEC-0007">
+<rem:name>
+Requisitos de Información</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>5.1 </rem:number>
+<rem:informationRequirement
+ oid = "IRQ-0001">
+<rem:name>
+Usuarios</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+estos 4  ó 5  requisitos de <rem:ref oid="GLO-0005">usuario</rem:ref></rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0002">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0003">
+<rem:description>
+Apellidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0004">
+<rem:description>
+DNI</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0005">
+<rem:description>
+Email</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0006">
+<rem:description>
+Teléfono</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0002">
+<rem:name>
+Cursos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+estos 4 requisitos con respecto a cursos</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0007">
+<rem:description>
+Fecha de comienzo</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0008">
+<rem:description>
+Fecha de fin</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0009">
+<rem:description>
+Tipos de cursos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0010">
+<rem:description>
+<rem:ref oid="GLO-0009">Monitor</rem:ref> que lo imparte</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0003">
+<rem:name>
+Trabajadores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+estos requisitos de los trabajadores</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0011">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0012">
+<rem:description>
+Apellidos</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0013">
+<rem:description>
+DNI</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0014">
+<rem:description>
+Teléfono</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0015">
+<rem:description>
+Número de la seguridad social</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0004">
+<rem:name>
+Tramitaciones económicas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+estos 4 requisitos de tramitaciones económicas</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0016">
+<rem:description>
+Número identificativo de la transacción</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0017">
+<rem:description>
+Cantidad</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0018">
+<rem:description>
+Forma de pago</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0019">
+<rem:description>
+Fecha de la misma</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+<rem:informationRequirement
+ oid = "IRQ-0005">
+<rem:name>
+Eventos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:relevantConcept>
+estos requisitos de eventos</rem:relevantConcept>
+<rem:averageLifeTime>
+<rem:tbd/>
+</rem:averageLifeTime>
+<rem:maximumLifeTime>
+<rem:tbd/>
+</rem:maximumLifeTime>
+<rem:averageOcurrences><rem:tbd/>
+</rem:averageOcurrences>
+<rem:maximumOcurrences><rem:tbd/>
+</rem:maximumOcurrences>
+<rem:specificData oid = "DAT-0020">
+<rem:description>
+Número Identificativo de <rem:ref oid="GLO-0006">Evento</rem:ref></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0021">
+<rem:description>
+Nombre</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0022">
+<rem:description>
+Precio<br/></rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0023">
+<rem:description>
+Lugar</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+<rem:specificData oid = "DAT-0024">
+<rem:description>
+Fecha</rem:description>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:specificData>
+</rem:informationRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0008">
+<rem:name>
+Requisitos de Interfaz de <rem:ref oid="GLO-0005">Usuario</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>5.2 </rem:number>
+<rem:section
+ oid = "SEC-0009">
+<rem:name>
+Requisitos Funcionales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>5.2.1 </rem:number>
+<rem:functionalRequirement
+ oid = "FRQ-0003">
+<rem:name>
+Informe con Reservas de Cursos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+dar una información eficaz al <rem:ref oid="GLO-0003">administrador</rem:ref> con todas las reservas realizadas de los diferentes tipos de cursos.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0004">
+<rem:name>
+<rem:ref oid="GLO-0009">Monitor</rem:ref> por <rem:ref oid="GLO-0004">Curso</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+ser capaz de insertar a uno y, sólo un <rem:ref oid="GLO-0009">monitor</rem:ref> para un <rem:ref oid="GLO-0004">curso</rem:ref></rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0005">
+<rem:name>
+Listado de Usuarios</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+presentar un listado de todos los clientes registrados en el sistema con todos sus datos.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0006">
+<rem:name>
+Añadir Eventos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+poder al <rem:ref oid="GLO-0003">administrador</rem:ref> añadir cuantos eventos quiera</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0007">
+<rem:name>
+Generar mayores utilidades</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+ilustrar o mostrar todas las características que ofrece la empresa de una manera clara y concisa para llamar la atención de nuestros futuros usuarios/clientes</rem:description>
+</rem:functionalRequirement>
+</rem:section>
+<rem:functionalRequirement
+ oid = "FRQ-0001">
+<rem:name>
+Compartir Horario de Cursos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+mostrar el horario de todos los cursos que el <rem:ref oid="GLO-0007">gimnasio</rem:ref> implemente</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0002">
+<rem:name>
+Compartir la fecha de los Eventos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status value = "STV-0002"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+mostrar los diferentes tipos de eventos que el <rem:ref oid="GLO-0007">gimnasio</rem:ref> lleva a cabo.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0008">
+<rem:name>
+Orden visual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+tener los elementos contenidos en pantalla un orden visual, que no estén recargados de un lado o del otro y que cada espacio disponible sea utilizado de la mejor manera.</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement
+ oid = "FRQ-0009">
+<rem:name>
+Imágenes</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>26</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+tener el mayor número de slider con imágenes para llamar la atención de los clientes y que sean explícita del <rem:ref oid="GLO-0007">gimnasio</rem:ref> por dentro.</rem:description>
+</rem:functionalRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0010">
+<rem:name>
+Requisitos No Funcionales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>5.3 </rem:number>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0001">
+<rem:name>
+Sistema fácil de usar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+ser ágil e intuitivo de utilizar a la hora de hacer cualquier tipo de gestión tanto para la parte del <rem:ref oid="GLO-0005">usuario</rem:ref> como del <rem:ref oid="GLO-0003">administrador</rem:ref>.</rem:description>
+</rem:nonFunctionalRequirement>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0002">
+<rem:name>
+Control de acceso</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+mantener un control de quien accede al sistema y de que parte lo hace, si de parte del <rem:ref oid="GLO-0005">usuario</rem:ref> o por parte del <rem:ref oid="GLO-0003">administrador</rem:ref>.</rem:description>
+</rem:nonFunctionalRequirement>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0003">
+<rem:name>
+Funcionamiento correcto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+funcionar correctamente sin ningún tipo de errores.</rem:description>
+</rem:nonFunctionalRequirement>
+<rem:nonFunctionalRequirement
+ oid = "NFR-0004">
+<rem:name>
+Disponibilidad 24/7</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance>
+<rem:tbd/>
+</rem:importance>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status>
+<rem:tbd/>
+</rem:status>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+estar disponible las 24 horas de los 7 días de la semana para uso de los futuros usuarios del <rem:ref oid="GLO-0007">gimnasio</rem:ref>.</rem:description>
+</rem:nonFunctionalRequirement>
+</rem:section>
+<rem:section
+ oid = "SEC-0011">
+<rem:name>
+Reglas de Negocio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>5.4 </rem:number>
+<rem:constraintRequirement
+ oid = "CRQ-0001">
+<rem:name>
+Contraseña Segura</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency>
+<rem:tbd/>
+</rem:urgency>
+<rem:status value = "STV-0005"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+El sistema deberá imponer a sus futuros usuarios que pongan una contraseña segura.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0002">
+<rem:name>
+Username no repetido</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0005"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+El <rem:ref oid="GLO-0005">usuario</rem:ref> del login no se puede repetir.</rem:description>
+</rem:constraintRequirement>
+<rem:constraintRequirement
+ oid = "CRQ-0003">
+<rem:name>
+Restricción Acceso <rem:ref oid="GLO-0003">Administrador</rem:ref>/<rem:ref oid="GLO-0005">Usuario</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0005"/>
+<rem:stability>
+<rem:tbd/>
+</rem:stability>
+<rem:description>
+Un <rem:ref oid="GLO-0003">administrador</rem:ref> no se puede &apos;logear&apos; como <rem:ref oid="GLO-0005">usuario</rem:ref> ni viceversa.</rem:description>
+</rem:constraintRequirement>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0012">
+<rem:name>
+Glosario de términos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>6 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0003">
+<rem:name>
+<rem:ref oid="GLO-0003">Administrador</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Persona que se dedica a la gestión y mantenimiento del <rem:ref oid="GLO-0007">gimnasio</rem:ref>, como por ejemplo las cuotas y todos los trámites administrativos relacionados con los clientes que se apuntan.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0004">
+<rem:name>
+<rem:ref oid="GLO-0004">Curso</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Tipo de actividades que puede realizar el cliente tras pagar una cuota, algunos ejemplos serían: <rem:ref oid="GLO-0004">Curso</rem:ref> de spinning, Cursos de natación, <rem:ref oid="GLO-0004">Curso</rem:ref> de pádel, etc. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0005">
+<rem:name>
+<rem:ref oid="GLO-0005">Usuario</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Persona que utiliza las instalaciones del <rem:ref oid="GLO-0007">gimnasio</rem:ref> previamente registrandose y lluego pagando una cuota. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0006">
+<rem:name>
+<rem:ref oid="GLO-0006">Evento</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Actividad que se realiza esporádicamente organizado por el <rem:ref oid="GLO-0007">gimnasio</rem:ref>. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0007">
+<rem:name>
+<rem:ref oid="GLO-0007">Gimnasio</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Local dotado de las instalaciones y aparatos para hacer gimnasia y/o realizar algún deporte. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0008">
+<rem:name>
+<rem:ref oid="GLO-0008">Instalaciones deportivas</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Lugar físico preparado para la realización de actividades físico-deportivas de diferentes modalidades. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0009">
+<rem:name>
+<rem:ref oid="GLO-0009">Monitor</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Persona encargada de impartir clases y de ayudar al cliente a realizar una actividad física de manera correcta. <br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0010">
+<rem:name>
+<rem:ref oid="GLO-0010">Sala de máquinas</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Espacio donde el cliente realizará actividades tales como cardio y musculación con pesas de forma libre. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0011">
+<rem:name>
+<rem:ref oid="GLO-0011">Vestuario</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Estancia en la que los clientes pueden vestirse con una vestimenta adecuada para realizar actividades deportivas, asearse y depositar sus pertenencias en la taquilla.</rem:text>
+</rem:glossaryItem>
+</rem:section>
+</rem:c_requirementsSpecification>
+<rem:d_requirementsSpecification oid = "DRS-0002">
+<rem:name>Documento de Análisis del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:d_requirementsSpecification>
+<rem:defectsSpecification oid = "DFS-0003">
+<rem:name>Registro de Conflictos y Defectos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:defectsSpecification>
+<rem:changeRequestsSpecification oid = "CHS-0004">
+<rem:name>Registro de Peticiones de Cambio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2018</rem:year>
+<rem:month>10</rem:month>
+<rem:day>16</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:changeRequestsSpecification>
+<rem:predefinedValueTypes>
+<rem:predefinedValueType
+ oid = "PVT-0002">
+<rem:name>
+Integer</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Integer numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0004">
+<rem:name>
+String</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Alphanumeric strings</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0003">
+<rem:name>
+Natural</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Natural numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0005">
+<rem:name>
+Date</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Dates</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0006">
+<rem:name>
+Time</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Hour:minutes:seconds</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0001">
+<rem:name>
+Real</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Real numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+</rem:predefinedValueTypes>
+<rem:predefinedValues>
+<rem:changeRequestStatusValue oid = "CRV-0002">
+<rem:name>pendiente de análisis</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0006">
+<rem:name>rechazado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0001">
+<rem:name>PD</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0003">
+<rem:name>pendiente de aprobar/rechazar</rem:name>
+</rem:changeRequestStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0001">
+<rem:name>PD</rem:name>
+</rem:conflictStatusValue>
+<rem:defectStatusValue oid = "DSV-0002">
+<rem:name>no eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0004">
+<rem:name>eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:defectStatusValue>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
+<rem:description>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0009">
+<rem:name>Dependiente del diseño</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:importanceValue oid = "IMV-0002">
+<rem:name>vital</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0001">
+<rem:name>PD</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
+</rem:importanceValue>
+<rem:stabilityValue oid = "SBV-0001">
+<rem:name>PD</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0004">
+<rem:name>alta</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0003">
+<rem:name>media</rem:name>
+</rem:stabilityValue>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0003">
+<rem:name>pendiente de verificación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0004">
+<rem:name>pendiente de validación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0001">
+<rem:name>PD</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
+</rem:statusValue>
+<rem:terminationValue oid = "TEV-0002">
+<rem:name>continúa</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0001">
+<rem:name>PD</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0003">
+<rem:name>queda sin efecto</rem:name>
+</rem:terminationValue>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0002">
+<rem:name>año(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0013">
+<rem:name>centésima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0008">
+<rem:name>día(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0009">
+<rem:name>hora(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0012">
+<rem:name>décima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:urgencyValue oid = "URV-0001">
+<rem:name>PD</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0002">
+<rem:name>inmediatamente</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0003">
+<rem:name>hay presión</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0004">
+<rem:name>puede esperar</rem:name>
+</rem:urgencyValue>
+</rem:predefinedValues>
+</rem:requirementsProject>
